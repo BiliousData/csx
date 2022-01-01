@@ -27,41 +27,13 @@
 
 //Menu messages
 static const char *funny_messages[][2] = {
-	{"PSX PORT BY CUCKYDEV", "YOU KNOW IT"},
-	{"PORTED BY CUCKYDEV", "WHAT YOU GONNA DO"},
-	{"FUNKIN", "FOREVER"},
-	{"WHAT THE HELL", "RITZ PSX"},
-	{"LIKE PARAPPA", "BUT COOLER"},
-	{"THE JAPI", "EL JAPI"},
-	{"PICO FUNNY", "PICO FUNNY"},
-	{"OPENGL BACKEND", "BY CLOWNACY"},
-	{"CUCKYFNF", "SETTING STANDARDS"},
-	{"lool", "inverted colours"},
-	{"NEVER LOOK AT", "THE ISSUE TRACKER"},
-	{"PSXDEV", "HOMEBREW"},
-	{"ZERO POINT ZERO TWO TWO EIGHT", "ONE FIVE NINE ONE ZERO FIVE"},
-	{"DOPE ASS GAME", "PLAYSTATION MAGAZINE"},
-	{"NEWGROUNDS", "FOREVER"},
-	{"NO FPU", "NO PROBLEM"},
-	{"OK OKAY", "WATCH THIS"},
-	{"ITS MORE MALICIOUS", "THAN ANYTHING"},
-	{"USE A CONTROLLER", "LOL"},
-	{"SNIPING THE KICKSTARTER", "HAHA"},
-	{"SHITS UNOFFICIAL", "NOT A PROBLEM"},
-	{"SYSCLK", "RANDOM SEED"},
-	{"THEY DIDNT HIT THE GOAL", "STOP"},
-	{"FCEFUWEFUETWHCFUEZDSLVNSP", "PQRYQWENQWKBVZLZSLDNSVPBM"},
 	{"PSXFUNKIN BY CUCKYDEV", "SUCK IT DOWN"},
-	{"PLAYING ON EPSXE HUH", "YOURE THE PROBLEM"},
-	{"NEXT IN LINE", "ATARI"},
-	{"HAXEFLIXEL", "COME ON"},
-	{"HAHAHA", "I DONT CARE"},
-	{"GET ME TO STOP", "TRY"},
-	{"FNF MUKBANG GIF", "THATS UNRULY"},
-	{"OPEN SOURCE", "FOREVER"},
-	{"ITS A PORT", "ITS WORSE"},
-	{"WOW GATO", "WOW GATO"},
-	{"BALLS FISH", "BALLS FISH"},
+	{"THANKS", "PHANTOMARCADE"},
+	{"DONT SMOKE", "KIDS"},
+	{"WHERE IS", "CD BOY"},
+	{"CASSETTE GIRL", "WHAT ABOUT VINYL GIRL"},
+	{"THIS IS", "WEEK EIGHT"},
+	{"WHAT IS A CASSETTE", "I USE CDS"},
 };
 
 #ifdef PSXF_NETWORK
@@ -299,7 +271,7 @@ void Menu_Load(MenuPage page)
 	IO_Data menu_arc = IO_Read("\\MENU\\MENU.ARC;1");
 	Gfx_LoadTex(&menu.tex_back,  Archive_Find(menu_arc, "back.tim"),  0);
 	Gfx_LoadTex(&menu.tex_main,  Archive_Find(menu_arc, "main.tim"),  0);
-	Gfx_LoadTex(&menu.tex_ng,    Archive_Find(menu_arc, "ng.tim"),    0);
+	Gfx_LoadTex(&menu.tex_ng,    Archive_Find(menu_arc, "bitcher.tim"),    0);
 	Gfx_LoadTex(&menu.tex_story, Archive_Find(menu_arc, "story.tim"), 0);
 	Gfx_LoadTex(&menu.tex_title, Archive_Find(menu_arc, "title.tim"), 0);
 	Mem_Free(menu_arc);
@@ -414,23 +386,21 @@ void Menu_Tick(void)
 				switch (beat)
 				{
 					case 3:
-						menu.font_bold.draw(&menu.font_bold, "PRESENT", SCREEN_WIDTH2, SCREEN_HEIGHT2 + 16, FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "BILIOUSDATA",   SCREEN_WIDTH2, SCREEN_HEIGHT2 - 16, FontAlign_Center);
+                        menu.font_bold.draw(&menu.font_bold, "AND", SCREEN_WIDTH2, SCREEN_HEIGHT2, FontAlign_Center);
+                        menu.font_bold.draw(&menu.font_bold, "UNSTOPABLE",   SCREEN_WIDTH2, SCREEN_HEIGHT2 + 16,      FontAlign_Center);
 				//Fallthrough
 					case 2:
 					case 1:
-						menu.font_bold.draw(&menu.font_bold, "BILIOUSDATA",   SCREEN_WIDTH2, SCREEN_HEIGHT2 - 32, FontAlign_Center);
-						menu.font_bold.draw(&menu.font_bold, "AND", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 16, FontAlign_Center);
-						menu.font_bold.draw(&menu.font_bold, "UNSTOPABLE",   SCREEN_WIDTH2, SCREEN_HEIGHT2,      FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "PORT BY",   SCREEN_WIDTH2, SCREEN_HEIGHT2 - 32, FontAlign_Center);
 						break;
 					
 					case 7:
-						menu.font_bold.draw(&menu.font_bold, "NEWGROUNDS",    SCREEN_WIDTH2, SCREEN_HEIGHT2 - 32, FontAlign_Center);
-						Gfx_BlitTex(&menu.tex_ng, &src_ng, (SCREEN_WIDTH - 128) >> 1, SCREEN_HEIGHT2 - 16);
+						menu.font_bold.draw(&menu.font_bold, "DONDRRR",    SCREEN_WIDTH2, SCREEN_HEIGHT2 - 16, FontAlign_Center);
 				//Fallthrough
 					case 6:
 					case 5:
-						menu.font_bold.draw(&menu.font_bold, "IN ASSOCIATION", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 64, FontAlign_Center);
-						menu.font_bold.draw(&menu.font_bold, "WITH",           SCREEN_WIDTH2, SCREEN_HEIGHT2 - 48, FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "CASSETTE GIRL BY", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 32, FontAlign_Center);
 						break;
 					
 					case 11:
@@ -442,13 +412,13 @@ void Menu_Tick(void)
 						break;
 					
 					case 15:
-						menu.font_bold.draw(&menu.font_bold, "FUNKIN", SCREEN_WIDTH2, SCREEN_HEIGHT2 + 8, FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "GIRL", SCREEN_WIDTH2, SCREEN_HEIGHT2 + 8, FontAlign_Center);
 				//Fallthrough
 					case 14:
-						menu.font_bold.draw(&menu.font_bold, "NIGHT", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 8, FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "CASSETTE", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 8, FontAlign_Center);
 				//Fallthrough
 					case 13:
-						menu.font_bold.draw(&menu.font_bold, "FRIDAY", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 24, FontAlign_Center);
+						menu.font_bold.draw(&menu.font_bold, "VS", SCREEN_WIDTH2, SCREEN_HEIGHT2 - 24, FontAlign_Center);
 						break;
 				}
 				break;

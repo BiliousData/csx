@@ -45,6 +45,7 @@ static const u16 note_key[] = {INPUT_LEFT, INPUT_DOWN, INPUT_UP, INPUT_RIGHT};
 
 //Stage definitions
 #include "character/bf.h"
+#include "character/bfone.h"
 #include "character/bfweeb.h"
 #include "character/dad.h"
 #include "character/spook.h"
@@ -1591,10 +1592,10 @@ void Stage_Tick(void)
 				//Check if screen should bump
 				boolean is_bump_step = (stage.song_step & 0xF) == 0;
 				
-				//M.I.L.F bumps
-				//if (stage.stage_id == StageId_4_3 && stage.song_step >= (168 << 2) && stage.song_step < (200 << 2))
-				//	is_bump_step = (stage.song_step & 0x3) == 0;
-				//
+				//Soda Groove bumps
+				if (stage.stage_id == StageId_1_5 && stage.song_step >= (0 << 2))
+					is_bump_step = (stage.song_step & 0x3) == 0;
+				
 				//Bump screen
 				if (is_bump_step)
 					stage.bump = FIXED_DEC(103,100);
@@ -1772,29 +1773,6 @@ void Stage_Tick(void)
 				Stage_DrawTex(&stage.tex_hud1, &health_back, &health_dst, stage.bump);
 			}
 			
-			//Hardcoded stage stuff
-			switch (stage.stage_id)
-			{
-				case StageId_1_2: //Fresh GF bop
-					switch (stage.song_step)
-					{
-						case 16 << 2:
-							stage.gf_speed = 2 << 2;
-							break;
-						case 48 << 2:
-							stage.gf_speed = 1 << 2;
-							break;
-						case 80 << 2:
-							stage.gf_speed = 2 << 2;
-							break;
-						case 112 << 2:
-							stage.gf_speed = 1 << 2;
-							break;
-					}
-					break;
-				default:
-					break;
-			}
 			
 			//Draw stage foreground
 			if (stage.back->draw_fg != NULL)

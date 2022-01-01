@@ -139,37 +139,70 @@ void Back_Alleya_DrawBG(StageBack *back)
 	//Animate and draw bleft
 	fx = stage.camera.x;
 	fy = stage.camera.y;
-	
-	if (stage.flag & STAGE_FLAG_JUST_STEP)
-	{
-		switch (stage.song_step & 7)
-		{
-			case 0:
-				Animatable_SetAnim(&this->bleft_animatable, 0);
-				break;
-			case 4:
-				Animatable_SetAnim(&this->bleft_animatable, 0);
-				break;
-		}
-	}
+	if (stage.stage_id == StageId_1_1)
+	    {
+	        if (stage.flag & STAGE_FLAG_JUST_STEP)
+	        {
+	        	switch (stage.song_step & 7)
+	        	{
+	        		case 0:
+	        			Animatable_SetAnim(&this->bleft_animatable, 0);
+	        			break;
+	        		case 4:
+	        			Animatable_SetAnim(&this->bleft_animatable, 0);
+	        			break;
+	        	}
+	        }
+	    }
+	else
+	    {
+	        if (stage.flag & STAGE_FLAG_JUST_STEP)
+	        {
+	        	switch (stage.song_step & 7)
+	        	{
+	        		case 0:
+	        			Animatable_SetAnim(&this->bleft_animatable, 0);
+	        			break;
+	        		case 4:
+	        			break;
+	        	}
+	        }
+	    }
 	Animatable_Animate(&this->bleft_animatable, (void*)this, Alleya_Bleft_SetFrame);
 
 	//Animate and draw right
 	fx = stage.camera.x;
 	fy = stage.camera.y;
 	
-	if (stage.flag & STAGE_FLAG_JUST_STEP)
-	{
-		switch (stage.song_step & 7)
-		{
-			case 0:
-				Animatable_SetAnim(&this->bright_animatable, 0);
-				break;
-			case 4:
-				Animatable_SetAnim(&this->bright_animatable, 0);
-				break;
-		}
-	}
+	if (stage.stage_id == StageId_1_1)
+	    {
+	        if (stage.flag & STAGE_FLAG_JUST_STEP)
+	        {
+	        	switch (stage.song_step & 7)
+	        	{
+	        		case 0:
+	        			Animatable_SetAnim(&this->bright_animatable, 0);
+	        			break;
+	        		case 4:
+	        			Animatable_SetAnim(&this->bright_animatable, 0);
+	        			break;
+	        	}
+	        }
+	    }
+	else
+	    {
+	        if (stage.flag & STAGE_FLAG_JUST_STEP)
+	        {
+	        	switch (stage.song_step & 7)
+	        	{
+	        		case 0:
+	        			Animatable_SetAnim(&this->bright_animatable, 0);
+	        			break;
+	        		case 4:
+	        			break;
+	        	}
+	        }
+	    }
 	Animatable_Animate(&this->bright_animatable, (void*)this, Alleya_Bright_SetFrame);
 
 	Alleya_Bleft_Draw(this, FIXED_DEC(-30,1) - fx, FIXED_DEC(30,1) - fy);

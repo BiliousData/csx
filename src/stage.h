@@ -180,8 +180,9 @@ typedef struct
 		fixed_t x, y, zoom;
 		fixed_t tx, ty, tz, td;
 		fixed_t bzoom;
+		fixed_t hzoom;
 	} camera;
-	fixed_t bump, sbump;
+	fixed_t bump, hump, sbump;
 	
 	StageBack *back;
 	
