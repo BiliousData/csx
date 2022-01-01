@@ -1,0 +1,17 @@
+all: \
+  iso/music/menu.xa \
+  iso/music/sidea.xa \
+  iso/music/sideb.xa \
+  iso/music/tape2a.xa
+
+# XA converts
+iso/music/%.xa: iso/music/%.mp3
+	tools/psxavenc/psxavenc -f 37800 -t xa -b 4 -c 2 -F 1 -C 0 $< $@
+iso/music/%.xa:
+	tools/xainterleave/xainterleave $@
+
+# XA interleaves
+iso/music/menu.xa: iso/music/freaky.xa iso/music/gameover.xa
+iso/music/sidea.xa: iso/music/ukiyoi.xa iso/music/ukiyov.xa iso/music/earwormi.xa iso/music/earwormv.xa
+iso/music/sideb.xa: iso/music/machinai.xa iso/music/machinav.xa iso/music/sodagroovei.xa iso/music/sodagroovev.xa
+iso/music/tape2a.xa: iso/music/cityfunki.xa iso/music/cityfunkv.xa iso/music/ouugh.xa

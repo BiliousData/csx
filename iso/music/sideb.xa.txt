@@ -1,0 +1,4 @@
+1 xa machinav.xa 1 0
+1 xa machinai.xa 1 1
+1 xa sodagroovev.xa 1 2
+1 xa sodagroovei.xa 1 3
