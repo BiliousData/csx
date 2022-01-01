@@ -1,10 +1,10 @@
-# PSXFunkin
-Friday Night Funkin' on the PSX LOL
+# CSXFunkin
+Cassette Girl on a console that uses CDs LOL
 
 ## Compilation
-Refer to [COMPILE.md](/COMPILE.md) here
+You likely know the drill by now, but read [COMPILE.md](/COMPILE.md) if you still don't know how.
 
 ## Disclaimer
-This project is not endorsed by the original Friday Night Funkin' devs, this is just an unofficial fan project because I was bored.
+This port currently does not have permission from the original creator of VS Cassette Girl. If the Mong wishes for me to take this down, I will do so.
 
-Assets such as Week 7, VS Kapi, VS Tricky are used with permission from their respective owners.
+This is also a modified version of PSXFunkin, by CuckyDev.
