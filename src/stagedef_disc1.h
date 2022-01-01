@@ -8,7 +8,7 @@
 		Back_Alleya_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(13,10)},
+		{FIXED_DEC(23,10),FIXED_DEC(23,10),FIXED_DEC(23,10)},
 		1, 1,
 		XA_Ukiyo, 0,
 		
@@ -24,7 +24,7 @@
 		Back_Alleya_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(13,10),FIXED_DEC(18,10)},
+		{FIXED_DEC(26,10),FIXED_DEC(26,10),FIXED_DEC(26,10)},
 		1, 2,
 		XA_Earworm, 2,
 		
@@ -40,7 +40,7 @@
 		Back_Alleya_New,
 		
 		//Song info
-		{FIXED_DEC(13,10),FIXED_DEC(15,10),FIXED_DEC(23,10)},
+		{FIXED_DEC(29,10),FIXED_DEC(29,10),FIXED_DEC(29,10)},
 		1, 3,
 		XA_Machina, 0,
 		
@@ -56,7 +56,7 @@
 		Back_Alleyb_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(1,1),FIXED_DEC(1,1)},
+		{FIXED_DEC(23,10),FIXED_DEC(23,10),FIXED_DEC(23,10)},
 		1, 4,
 		XA_SodaGroove, 2,
 		
@@ -72,7 +72,7 @@
 		Back_Alleya_New,
 		
 		//Song info
-		{FIXED_DEC(1,1),FIXED_DEC(17,10),FIXED_DEC(24,10)},
+		{FIXED_DEC(26,10),FIXED_DEC(26,10),FIXED_DEC(26,10)},
 		1, 5,
 		XA_CityFunk, 0,
 		
