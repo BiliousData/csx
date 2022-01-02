@@ -1,7 +1,7 @@
-	{ //StageId_1_1 (Bopeebo)
+	{ //StageId_1_1 (Ukiyo)
 		//Characters
 		{Char_BFONE_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
-		{Char_cga_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
+		{Char_KassO_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
 		{Char_GF_New,     FIXED_DEC(170,1),    FIXED_DEC(-30,1)},
 		
 		//Stage background
@@ -14,10 +14,10 @@
 		
 		StageId_1_2, STAGE_LOAD_FLAG
 	},
-	{ //StageId_1_2 (Fresh)
+	{ //StageId_1_2 (Earworm)
 		//Characters
 		{Char_BF_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
+		{Char_KassO_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
 		{Char_GF_New,     FIXED_DEC(170,1),    FIXED_DEC(-30,1)},
 		
 		//Stage background
@@ -30,7 +30,7 @@
 		
 		StageId_1_3, STAGE_LOAD_FLAG
 	},
-	{ //StageId_1_3 (Dadbattle)
+	{ //StageId_1_3 (Machina)
 		//Characters
 		{Char_BF_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
 		{Char_Dad_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
@@ -46,10 +46,10 @@
 		
 		StageId_1_3, 0
 	},
-	{ //StageId_1_4 (Tutorial)
+	{ //StageId_1_4 (Soda Groove)
 		//Characters
 		{Char_BF_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
+		{Char_KassO_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
 		{Char_GF_New,     FIXED_DEC(170,1),    FIXED_DEC(-30,1)},
 		
 		//Stage background

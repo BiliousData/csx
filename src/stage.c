@@ -59,6 +59,7 @@ static const u16 note_key[] = {INPUT_LEFT, INPUT_DOWN, INPUT_UP, INPUT_RIGHT};
 #include "character/mario.h"
 #include "character/cgm.h"
 #include "character/cga.h"
+#include "character/kasso.h"
 
 #include "stage/dummy.h"
 #include "stage/hell.h"

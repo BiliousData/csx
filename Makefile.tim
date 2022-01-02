@@ -18,6 +18,7 @@ all: \
 	iso/mom/hair.tim \
 	iso/kassm/main.arc \
 	iso/kassproto/main.arc \
+	iso/kassopt/main.arc \
 	iso/xmasp/main.arc \
 	iso/senpai/main.arc \
 	iso/senpaim/main.arc \
@@ -74,6 +75,9 @@ iso/kassm/main.arc: iso/kassm/idle0.tim iso/kassm/idle1.tim iso/kassm/idle2.tim 
 
 #Cassette Girl Prototype
 iso/kassproto/main.arc: iso/kassproto/downa0.tim iso/kassproto/downa1.tim iso/kassproto/downa2.tim iso/kassproto/downa3.tim iso/kassproto/idle0.tim iso/kassproto/idle1.tim iso/kassproto/idle2.tim iso/kassproto/idle3.tim iso/kassproto/idle4.tim iso/kassproto/lefta0.tim iso/kassproto/lefta1.tim iso/kassproto/lefta2.tim iso/kassproto/righta0.tim iso/kassproto/righta1.tim iso/kassproto/righta2.tim iso/kassproto/righta3.tim iso/kassproto/upa0.tim iso/kassproto/upa1.tim iso/kassproto/upa2.tim iso/kassproto/upa3.tim iso/kassproto/upa4.tim
+
+#Cassette Girl Optimized
+iso/kassopt/main.arc: iso/kassopt/down0.tim iso/kassopt/down1.tim iso/kassopt/down2.tim iso/kassopt/down3.tim iso/kassopt/idle0.tim iso/kassopt/idle1.tim iso/kassopt/idle2.tim iso/kassopt/idle3.tim iso/kassopt/idle4.tim iso/kassopt/left0.tim iso/kassopt/left1.tim iso/kassopt/left2.tim iso/kassopt/right0.tim iso/kassopt/right1.tim iso/kassopt/right2.tim iso/kassopt/right3.tim iso/kassopt/up0.tim iso/kassopt/up1.tim iso/kassopt/up2.tim iso/kassopt/up3.tim iso/kassopt/up4.tim
 
 # XMas Parents
 iso/xmasp/main.arc: iso/xmasp/idle0.tim iso/xmasp/idle1.tim iso/xmasp/idle2.tim iso/xmasp/idle3.tim iso/xmasp/lefta0.tim iso/xmasp/lefta1.tim iso/xmasp/leftb0.tim iso/xmasp/leftb1.tim iso/xmasp/downa0.tim iso/xmasp/downa1.tim iso/xmasp/downb0.tim iso/xmasp/downb1.tim iso/xmasp/upa0.tim iso/xmasp/upa1.tim iso/xmasp/upb0.tim iso/xmasp/upb1.tim iso/xmasp/righta0.tim iso/xmasp/righta1.tim iso/xmasp/rightb0.tim iso/xmasp/rightb1.tim

@@ -46,6 +46,7 @@ SRCS = src/main.c \
        src/character/mario.c \
        src/character/cga.c \
        src/character/cgm.c \
+       src/character/kasso.c \
        src/object.c \
        src/object/combo.c \
        src/object/splash.c \

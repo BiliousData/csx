@@ -126,6 +126,7 @@
 				<!-- Cassette Girl -->
 				<file name = "cgm.arc" type = "data" source = "iso/kassm/main.arc"/>
 				<file name = "cga.arc" type = "data" source = "iso/kassproto/main.arc"/>
+				<file name = "kasso.arc" type = "data" source = "iso/kassopt/main.arc"/>
 			</dir>
 			
 			<!-- Music -->
