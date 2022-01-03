@@ -33,7 +33,7 @@
 	{ //StageId_1_3 (Machina)
 		//Characters
 		{Char_BF_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
+		{Char_KassO_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
 		{Char_GF_New,     FIXED_DEC(170,1),    FIXED_DEC(-30,1)},
 		
 		//Stage background
@@ -65,7 +65,7 @@
 	{ //StageId_1_5 (City Funk)
 		//Characters
 		{Char_BF_New,    FIXED_DEC(260,1),  FIXED_DEC(100,1)},
-		{Char_Dad_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
+		{Char_KassO_New, FIXED_DEC(10,1),  FIXED_DEC(100,1)},
 		{Char_GF_New,     FIXED_DEC(170,1),    FIXED_DEC(-30,1)},
 		
 		//Stage background
